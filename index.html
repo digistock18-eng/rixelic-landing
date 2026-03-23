@@ -8,6 +8,21 @@
 <title>Rixelic PNG Bundle</title>
 <meta name="description" content="1900+ Premium PNG Assets for Designers">
 
+    <script>
+document.querySelectorAll(".faq-question").forEach(button => {
+  button.addEventListener("click", () => {
+    const answer = button.nextElementSibling;
+
+    if (answer.style.display === "block") {
+      answer.style.display = "none";
+    } else {
+      answer.style.display = "block";
+    }
+  });
+});
+</script>
+
+  
 <!-- META PIXEL -->
 <script>
 !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){
@@ -103,20 +118,6 @@ body {
     grid-template-columns: 1fr;
   }
 }
-
-  <script>
-document.querySelectorAll(".faq-question").forEach(button => {
-  button.addEventListener("click", () => {
-    const answer = button.nextElementSibling;
-
-    if (answer.style.display === "block") {
-      answer.style.display = "none";
-    } else {
-      answer.style.display = "block";
-    }
-  });
-});
-</script>
   
   /* FAQ */
 .faq {
