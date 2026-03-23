@@ -103,7 +103,30 @@ body {
     grid-template-columns: 1fr;
   }
 }
-  
+  /* CTA */
+.cta {
+  background: #0b1a2f;
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.cta h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.cta p {
+  margin-bottom: 15px;
+}
+
+/* FOOTER */
+.footer {
+  background: #081426;
+  color: #aaa;
+  text-align: center;
+  padding: 20px;
+}
 /* HEADER */
 .header {
   position: fixed;
@@ -440,17 +463,27 @@ body {
 <p>Instant download after payment</p>
 </section>
 
-<!-- CTA -->
-<section class="section">
-<a href="https://rzp.io/rzp/sQ4tSB0B" target="_blank" class="btn">
-Get Access Now ₹199
-</a>
+  <!-- CTA FOOTER -->
+<section class="cta">
+  <h2>Ready to Level Up Your Designs?</h2>
+  <p>Get instant access to 1900+ premium PNG assets.</p>
+
+  <p style="margin:15px 0;">
+    <span style="text-decoration:line-through; color:#aaa;">₹999</span>
+    <span style="font-size:28px; font-weight:bold; margin-left:10px;">₹199</span>
+  </p>
+
+  <a href="https://rzp.io/rzp/sQ4tSB0B" target="_blank" class="btn big-btn"
+  onclick="fbq('track','InitiateCheckout'); gtag('event','purchase_click');">
+  🚀 Get Instant Access – ₹199
+  </a>
 </section>
 
 <!-- FOOTER -->
-<div class="footer">
-© 2026 Rixelic.com
-</div>
+<footer class="footer">
+  <p>© 2026 Rixelic.com</p>
+</footer>
+
 
 <!-- WHATSAPP -->
 <a href="https://wa.me/918951692195" target="_blank" class="whatsapp">
