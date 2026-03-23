@@ -103,6 +103,62 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+  <script>
+document.querySelectorAll(".faq-question").forEach(button => {
+  button.addEventListener("click", () => {
+    const answer = button.nextElementSibling;
+
+    if (answer.style.display === "block") {
+      answer.style.display = "none";
+    } else {
+      answer.style.display = "block";
+    }
+  });
+});
+</script>
+  
+  /* FAQ */
+.faq {
+  padding: 80px 20px;
+  text-align: center;
+  background: #f8f9fb;
+}
+
+.faq h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.faq-sub {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.faq-item {
+  max-width: 700px;
+  margin: 10px auto;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: left;
+}
+
+.faq-answer {
+  display: none;
+  padding: 10px 15px;
+  color: #555;
+}
+  
   /* CTA */
 .cta {
   background: #0b1a2f;
@@ -455,6 +511,49 @@ body {
       <img src="images/cat3.png" alt="Category 3">
     </div>
   </div>
+</section>
+
+  <!-- FAQ SECTION -->
+<section class="faq">
+
+  <h2>Frequently Asked Questions</h2>
+  <p class="faq-sub">Got questions? We've got answers.</p>
+
+  <div class="faq-item">
+    <button class="faq-question">What exactly do I get?</button>
+    <div class="faq-answer">
+      You will get 1900+ premium PNG assets across multiple categories, ready to use for any project.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">Can I use these for commercial projects?</button>
+    <div class="faq-answer">
+      Yes, all assets come with a commercial license. You can use them in client and business work.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">How will I receive the files?</button>
+    <div class="faq-answer">
+      After payment, you will get instant download access via WhatsApp or email.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">Is this a one-time payment?</button>
+    <div class="faq-answer">
+      Yes, this is a one-time payment. No monthly fees.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">What if I need help?</button>
+    <div class="faq-answer">
+      You can contact us anytime on WhatsApp. We will help you quickly.
+    </div>
+  </div>
+
 </section>
   
 <!-- FAQ -->
