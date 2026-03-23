@@ -21,6 +21,42 @@ document.querySelectorAll(".faq-question").forEach(button => {
   });
 });
 </script>
+  <!-- WHAT'S INSIDE -->
+<section class="inside">
+
+  <h2>What's Inside</h2>
+  <p class="inside-sub">Organized across 5+ premium categories.</p>
+
+  <div class="inside-grid">
+
+    <div class="inside-card">
+      <div class="icon">💻</div>
+      <p>Technology & Business</p>
+    </div>
+
+    <div class="inside-card">
+      <div class="icon">👥</div>
+      <p>People & Lifestyle</p>
+    </div>
+
+    <div class="inside-card">
+      <div class="icon">🍴</div>
+      <p>Food & Nature</p>
+    </div>
+
+    <div class="inside-card">
+      <div class="icon">🎨</div>
+      <p>Design & Creative</p>
+    </div>
+
+    <div class="inside-card">
+      <div class="icon">👑</div>
+      <p>Luxury & Editorial</p>
+    </div>
+
+  </div>
+
+</section>
 
 <!-- META PIXEL -->
 <script>
@@ -116,6 +152,52 @@ body {
   .grid {
     grid-template-columns: 1fr;
   }
+}
+  /* WHAT'S INSIDE */
+.inside {
+  padding: 80px 20px;
+  text-align: center;
+  background: #f8f9fb;
+}
+
+.inside h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.inside-sub {
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.inside-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.inside-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.inside-card:hover {
+  transform: translateY(-5px);
+}
+
+.inside-card .icon {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.inside-card p {
+  font-size: 14px;
+  color: #333;
 }
   
   /* FAQ */
