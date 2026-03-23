@@ -204,7 +204,52 @@ body {
   padding: 10px 15px;
   color: #555;
 }
-  
+  /* PROBLEMS SECTION */
+.problems {
+  padding: 80px 20px;
+  text-align: center;
+  background: #f8f9fb;
+}
+
+.problems h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.problems .sub {
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.problem-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.problem-card {
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.problem-card:hover {
+  transform: translateY(-5px);
+}
+
+.problem-card .icon {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.problem-card p {
+  font-size: 14px;
+  color: #333;
+}
   /* CTA */
 .cta {
   background: #0b1a2f;
