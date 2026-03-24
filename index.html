@@ -477,46 +477,90 @@ body {
   </a>
 </div>
 
-<!-- HERO SECTION -->
-  <section class="hero">
+/* HERO */
+.hero {
+  background: linear-gradient(to right, #0f172a, #1e3a8a);
+  color: white;
+  padding: 100px 20px;
+}
+
+.hero-container {
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.price {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #bbb;
+  margin-right: 10px;
+}
+
+.new-price {
+  color: #22c55e;
+  font-weight: bold;
+}
+
+.offer {
+  color: #facc15;
+  font-weight: bold;
+}
+
+.hero-btn {
+  display: inline-block;
+  margin-top: 20px;
+  background: #ff3b3b;
+  color: white;
+  padding: 14px 30px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.hero-btn:hover {
+  background: #e12d2d;
+}
+
+<!-- HERO SECTION LEFT SIDE-->
+<section class="hero">
   <div class="hero-container">
 
-    <!-- LEFT SIDE -->
-    <div class="hero-text">
+    <h1>1900+ Premium PNG Asset Library</h1>
 
-      <h1>1900+ Premium PNG Assets</h1>
+    <p>
+      For Graphic Designers, Content Creators & Freelancers
+    </p>
 
-      <p>
-      Perfect for Graphic Designers, Content Creators,<br>
-      Freelancers & Small Business Owners
-      </p>
-
-      <p style="margin:15px 0;">
-        <span style="text-decoration:line-through; color:#ddd;">₹999</span><br>
-        <span style="font-size:32px; font-weight:bold;">₹199</span><br>
-        <span style="color:#22c55e; font-weight:bold;">(80% OFF)</span>
-      </p>
-
-      <p style="color:#ffeb3b; font-weight:bold;">
-      🔥 Limited Time Offer
-      </p>
-
-      <p>
-      Save time & create stunning designs faster 🚀
-      </p>
-
-      <a href="https://rzp.io/rzp/sQ4tSB0B" target="_blank" class="btn big-btn"
-      onclick="fbq('track','InitiateCheckout'); gtag('event','purchase_click');">
-      🔥 Get Access ₹199
-      </a>
-
-      <br><br>
-
-      <small>
-      Or try 500+ PNG Pack → ₹49
-      </small>
-
+    <div class="price">
+      <span class="old-price">₹999</span>
+      <span class="new-price">₹199</span>
+      <span class="offer">(80% OFF)</span>
     </div>
+
+    <a href="https://rzp.io/rzp/s04tSB0B" target="_blank" class="hero-btn"
+       onclick="fbq('track','InitiateCheckout'); gtag('event','purchase_click');">
+       Explore Collection ↓
+    </a>
+
+  </div>
+</section>
 
     <!-- RIGHT SIDE -->
     <div class="hero-image">
